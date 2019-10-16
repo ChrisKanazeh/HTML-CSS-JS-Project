@@ -1,0 +1,219 @@
+/*page container*/
+
+/*body style*/
+body {
+	background-color: #4F6D93;
+	background: linear-gradient(#FFFFFF, #4F6D93);
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header style*/
+header{
+	background-color: #000033;
+	color: #FFFFFF;
+	background-image: url("images/sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 60px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+/*navigation style*/
+nav {
+	float: left;
+	width: 160px;
+	font-weight: bold;
+
+	padding: 20px;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	font-size: 1.2em;
+}
+
+nav :link {
+	color: #000033;
+}
+
+nav :visited {
+	color: #344873;
+}
+
+nav :hover {
+	color: #FFFFFF;
+}
+
+/*<a> navigation style*/
+nav a {
+	text-decoration: none;
+}
+
+main {
+	padding-top: 1px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 20px;
+	background: #FFFFFF;
+	margin-left: 190px;
+
+}
+
+/*h1 style*/
+h1{
+	font-family: Georgia, Times New Roman, serif;
+	margin-top: 0px;
+}
+
+/*h2 style*/
+h2 {
+	color: #3399CC;
+	font-family: Georgia, Times New Roman, serif;
+	text-shadow: 1px 1px 1px #CCCCCC;
+}
+
+/*h3 style*/
+h3 {
+	color: #000033;
+	font-family: Georgia, Times New Roman, serif;
+}
+
+/*dt style*/
+dt {
+	color: #000033;
+	font-weight: bold;
+}
+
+/*ul style*/
+main ul {
+	list-style-image: url('images/marker.gif');
+}
+
+/*footer style*/
+footer {
+	font-size: 75%;
+	font-style: italic;
+	text-align: center;
+	font-family: Georgia, Times New Roman, serif;
+	padding: 20px;
+	background-color: white;
+}
+
+/*table style*/
+table{
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td, th {
+	border: 1px solid #999;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+th {
+	background-color: blue;
+	color: white;
+}
+
+td u {
+	color: blue;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #ccc;
+}
+
+/*resort class style*/
+.resort {
+	color: #5C7FA3;
+	font-weight: bold;
+}
+
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	background-color: #90C7E3;
+	min-width: 960px;
+	max-width: 2048px;
+	box-shadow: 3px 3px 3px #333333;
+}
+
+#main-image {
+	height: 300px;
+	margin-left: 190px;
+	background-image: url("images/coast-main.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#accommodations-image{
+	height: 300px;
+	margin-left: 190px;
+	background-image: url("images/bungalow-main.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#activities-image{
+	height: 300px;
+	margin-left: 190px;
+	background-image: url("images/trail-main.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;	
+}
+
+#contact {
+	font-size: 90%;
+}
+
+
+form {
+	border-style:solid;
+	border-color:#3399CC;
+	box-shadow: 3px 3px;
+	
+	
+	
+}
+
+label {
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+	
+	
+}
+
+input[type=submit] {
+	background-color: #3399CC;
+}
+
+
+@media only screen and (max-width: 64em) {
+	body {margin: 0;  }
+	#wrapper { min-width: 0; width: auto; box-shadow: none; }
+	main { margin-left: 0; }
+	nav { float: none; width: auto; text-align: center; padding: 0.5em }
+	nav li { display: inline; padding-bottom: 0.25em; padding-top: 0.25em; padding-left: 0.75em; padding-right: 0.75em; }
+	#image { margin-left: 0; height: 200px; }
+
+}
+
+@media only screen and (max-width: 37.5em) {
+	header { padding-top: 1em;  }
+	main { padding-top: 0.1em; padding-bottom: 0.1em; padding-left: 1em; padding-right: 1em; font-size: 90%; }
+	h1 { font-size: 1.5em; }
+	nav li { display: block; margin: 0; border-bottom: 2px solid #330000; }
+	nav a { display: block; }
+	#image { background-image: none; height: 0; }
+	table { display: none; }
+	
+}

@@ -1,0 +1,1 @@
+document.getElementById("DateTimeScript").innerHTML = Date();
